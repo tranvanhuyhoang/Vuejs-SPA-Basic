@@ -1,9 +1,9 @@
 import { createApp, h } from "vue";
 import App from "./App.vue";
 import singleSpaVue from "single-spa-vue";
-import { registerApplication, start } from "single-spa";
+// import { registerApplication, start } from "single-spa";
 
-const app = singleSpaVue({
+window.vueApp = singleSpaVue({
   createApp,
   appOptions: {
     el: "#app",
@@ -15,13 +15,13 @@ const app = singleSpaVue({
   },
 });
 
-registerApplication({
-  name: "vue-app",
-  app,
-  activeWhen: ["/"],
-  customProps: {
-    testProps: "This is props",
-  },
-});
+// registerApplication({
+//   name: "vue-app",
+//   app,
+//   activeWhen: ["/"],
+//   customProps: {
+//     testProps: "This is props",
+//   },
+// });
 
-start();
+// start();

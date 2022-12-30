@@ -1,5 +1,5 @@
 <template>
-  <div>Vue app Start {{ testProps }}</div>
+  <div>Vue app Start</div>
 </template>
 
 <script>
